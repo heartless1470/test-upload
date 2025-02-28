@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Duffus Flooring</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" href="#">Duffus Flooring<span>.</span></a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+    <main>
+        <section class="services">
+            <div class="container">
+                <h1>Our Flooring Services</h1>
+                <p>At Duffus Flooring, we offer a wide range of flooring solutions tailored to meet your needs. Our experienced team is dedicated to providing high-quality installations and exceptional customer service.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="images/hardwood-icon.svg" alt="Hardwood Flooring">
+                        <h2>Hardwood Resanding</h2>
+                        <p>Restore the beauty of your hardwood floors with our professional resanding services.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/hardwood-icon.svg" alt="Hardwood Flooring">
+                        <h2>Hardwood Reinstallation</h2>
+                        <p>Expert reinstallation of hardwood flooring to ensure a perfect fit and finish.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/vinyl-icon.svg" alt="Vinyl Flooring">
+                        <h2>Vinyl Installation</h2>
+                        <p>Durable and stylish vinyl flooring installation for any room in your home.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/pool-deck-icon.svg" alt="Pool Deck">
+                        <h2>Pool Deck</h2>
+                        <p>High-quality pool deck installations in both hardwood and composite materials that are both functional and aesthetically pleasing.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/tile-icon.svg" alt="Tile Flooring">
+                        <h2>Tiling</h2>
+                        <p>Choose from a variety of styles and colors to create the perfect look for your kitchen or bathroom with our tile flooring options.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/trellis-icon.svg" alt="Trellis Installation">
+                        <h2>Trellis Installations</h2>
+                        <p>Beautiful and functional trellis installations to enhance your outdoor spaces.</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="images/wood-resurfacing-icon.svg" alt="Wood Resurfacing">
+                        <h2>Wood Resurfacing</h2>
+                        <p>Bring new life to your wood surfaces with our expert resurfacing services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+</body>
+</html>
